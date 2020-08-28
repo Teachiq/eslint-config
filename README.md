@@ -4,9 +4,9 @@ This package is intended to configure everything you need for eslint and prettie
 
 ## Installing
 
-`npm install --save-dev @teachiq/eslint-config`
+`npm install -D @teachiq/eslint-config`
 
-**Important:** The package should install all necessary peer dependencies, but if you run into problems run `npx install-peerdeps --save-dev @teachiq/eslint-config`
+**Important:** The package should install all necessary peer dependencies, but if you run into problems run `npx install-peerdeps -D @teachiq/eslint-config`
 
 ## Using
 
