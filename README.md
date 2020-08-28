@@ -1,5 +1,7 @@
 # Teachiq eslint-config
 
+This package is intended to configure everything you need for eslint and prettier and their relevant vscode extensions
+
 ## Installing
 
 `npm install @teachiq/eslint-config`
@@ -17,3 +19,7 @@ In your .eslintrc json file
 ```
 
 **Note:** That should be all you need in your .eslintrc file, unless you explicitly want to override the official config (not recommended)
+
+## VScode Extensions
+
+This config works best with the [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extensions
