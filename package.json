@@ -61,8 +61,5 @@
     "formatting"
   ],
   "author": "Teachiq",
-  "license": "ISC",
-  "dependencies": {
-    "spawn-npm-install": "^1.2.0"
-  }
+  "license": "ISC"
 }
