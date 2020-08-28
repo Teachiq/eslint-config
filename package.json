@@ -1,6 +1,6 @@
 {
   "name": "@teachiq/eslint-config",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "publishConfig": {
     "access": "restricted",
     "registry": "https://npm.pkg.github.com/"
