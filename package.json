@@ -4,7 +4,8 @@
   "description": "The standard Teachiq linting config",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "echo $npm_package_version",
+    "postversion": "npm publish",
     "postinstall": "node install.js"
   },
   "peerDependencies": {
