@@ -20,7 +20,8 @@
   "main": "index.js",
   "scripts": {
     "version": "echo $npm_package_version",
-    "postversion": "npm publish"
+    "postversion": "npm publish",
+    "postinstall": "echo \"Install complete! Don't forget to run 'teachiq-config-install'\""
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.9.0",
