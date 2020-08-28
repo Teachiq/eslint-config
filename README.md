@@ -6,11 +6,11 @@ This package is intended to configure everything you need for eslint and prettie
 
 `npm install -D @teachiq/eslint-config`
 
-**Important:** The package should install all necessary peer dependencies, but if you run into problems run `npx install-peerdeps -D @teachiq/eslint-config`
-
 ## Using
 
-In your .eslintrc json file
+After the install finishes, you should be able to run `npx teachiq-config-install`. This installs all peer dependencies needed to run the linter.
+
+Then, in your .eslintrc json file, replace your existing config with:
 
 ```json
 {
