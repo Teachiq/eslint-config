@@ -2,7 +2,6 @@
   "name": "@teachiq/eslint-config",
   "version": "1.0.0",
   "publishConfig": {
-    "access": "restricted",
     "registry": "https://npm.pkg.github.com/"
   },
   "description": "The standard Teachiq linting config",
@@ -18,7 +17,7 @@
   "scripts": {
     "version": "echo $npm_package_version",
     "postversion": "npm publish",
-    "postinstall": "node install.js"
+    "postinstall": "npx install-peerdeps @teachiq/eslint-config --registry https://npm.pkg.github.com/"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.9.0",

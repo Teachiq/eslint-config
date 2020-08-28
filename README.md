@@ -2,7 +2,7 @@
 
 ## Installing
 
-`npm install @teachiq/eslint-config`
+`npm install --save-dev @teachiq/eslint-config`
 
 **Important:** The package should install all necessary peer dependencies, but if you run into problems run `npx install-peerdeps --dev eslint-config-ns`
 
