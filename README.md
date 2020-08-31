@@ -10,6 +10,8 @@ This package is intended to configure everything you need for eslint and prettie
 
 After the install finishes, you should be able to run `npx teachiq-config-install`. This installs all peer dependencies needed to run the linter.
 
+In case the above does not work, try targeting the install script directly by running `./node_modules/.bin/teachiq-config-install` in your project directory.
+
 Then, in your .eslintrc json file, replace your existing config with:
 
 ```json
