@@ -25,3 +25,14 @@ Then, in your .eslintrc json file, replace your existing config with:
 ## VScode Extensions
 
 This config works best with the [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extensions
+
+### Format on save
+
+In order to get the "format on save" in vscode to work with this config your user settings- or workspace settings (the one in the .vscode directory) .json files must include the following:
+
+```json
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+}
+```
