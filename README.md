@@ -16,7 +16,7 @@ Then, in your .eslintrc json file, replace your existing config with:
 
 ```json
 {
-    "extends": "@teachiq"
+  "extends": "@teachiq"
 }
 ```
 
@@ -28,11 +28,25 @@ This config works best with the [eslint](https://marketplace.visualstudio.com/it
 
 ### Format on save
 
-In order to get the "format on save" in vscode to work with this config your user settings- or workspace settings (the one in the .vscode directory) .json files must include the following:
+In order to get the "format on save" in vscode to work with this config you need a .prettierrc config file as well as to change some user settings.
+
+1. your user settings- or workspace settings (the one in the .vscode directory) .json files must include the following:
+
+_settings.json_
 
 ```json
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true
+}
+```
+
+2. create a new file called `.prettierrc` and add the following
+
+```json
+{
+  "semi": false,
+  "singleQuote": true,
+  "printWidth": 120
 }
 ```
