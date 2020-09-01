@@ -45,7 +45,6 @@ _settings.json_
 
 ```json
 {
-  "trailingComma": "all",
   "semi": false,
   "singleQuote": true,
   "printWidth": 120,
