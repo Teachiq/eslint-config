@@ -13,6 +13,7 @@ module.exports = {
     '@vue/standard',
     '@vue/typescript/recommended',
     '@vue/eslint-config-typescript',
+    'prettier'
   ],
   plugins: ['@typescript-eslint', 'prettier', 'vue'],
   rules: {
