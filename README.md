@@ -38,7 +38,6 @@ _settings.json_
 {
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "eslint.format.enable": true,
-  "dashboard.projectData": null,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
