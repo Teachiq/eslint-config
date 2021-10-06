@@ -21,15 +21,8 @@ module.exports = {
     'vue/max-len': ['warn', {
       code: 120,
       tabWidth: 2,
-      ignorePattern: '',
-      ignoreComments: true,
-      ignoreTrailingComments: true,
       ignoreUrls: true,
-      ignoreStrings: true,
-      ignoreTemplateLiterals: true,
-      ignoreRegExpLiterals: true,
-      ignoreHTMLAttributeValues: false,
-      ignoreHTMLTextContents: true,
+      ignorePattern: 'd="([\\s\\S]*?)"', // Ignore SVG path
     }],
     'vue/no-potential-component-option-typo': 'error',
     'vue/html-quotes': ['error', 'double', { avoidEscape: true }],
