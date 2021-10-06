@@ -1,12 +1,9 @@
 {
   "name": "@teachiq/eslint-config",
-  "version": "2.0.0-beta.0",
+  "version": "2.0.0-beta.1",
   "publishConfig": {
     "access": "public",
     "registry": " https://npm.pkg.github.com"
-  },
-  "bin": {
-    "teachiq-config-install": "./install.js"
   },
   "description": "The standard Teachiq linting config",
   "repository": {
@@ -20,22 +17,10 @@
   "main": "index.js",
   "scripts": {
     "version": "echo $npm_package_version",
-    "postversion": "npm publish",
-    "postinstall": "echo \"Install complete! Don't forget to run 'teachiq-config-install'\""
+    "postversion": "npm publish"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.9.0",
-    "@typescript-eslint/parser": "^3.9.0",
-    "@vue/eslint-config-standard": "^5.1.0",
-    "@vue/eslint-config-typescript": "^5.0.2",
-    "eslint": "^7.32.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^7.19.0",
-    "eslint-plugin-file-progress": "^1.1.1",
-    "typescript": "~3.7.5"
+    "eslint": "^7.32.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.10.1",
@@ -43,13 +28,13 @@
     "@vue/eslint-config-standard": "^5.1.2",
     "@vue/eslint-config-typescript": "^5.1.0",
     "eslint": "^7.32.0",
+    "eslint-plugin-file-progress": "^1.1.1",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "eslint-plugin-vue": "^7.19.0",
-    "eslint-plugin-file-progress": "^1.1.1",
-    "typescript": "^4.0.2"
+    "@rushstack/eslint-patch": "1.0.7"
   },
   "keywords": [
     "eslint",
@@ -60,4 +45,5 @@
   ],
   "author": "Teachiq",
   "license": "ISC"
+ 
 }
