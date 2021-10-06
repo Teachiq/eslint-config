@@ -12,8 +12,9 @@ module.exports = {
     '@vue/standard',
   ],
   ignorePatterns: ['**/*.min.js', '**/polyfill.js'],
-  plugins: ['@typescript-eslint', 'vue'],
+  plugins: ['@typescript-eslint', 'vue', 'file-progress'],
   rules: {
+    'file-progress/activate': 1,
     'vue/static-class-names-order': 'warn',
     'vue/max-len': [
       'warn',
@@ -57,6 +58,7 @@ module.exports = {
         '@vue/eslint-config-typescript',
       ],
       rules: {
+        'file-progress/activate': 1,
         'space-before-function-paren': [
           'error',
           {
