@@ -8,15 +8,14 @@ This package is intended to configure everything you need for eslint relevant vs
 
 ## Using
 
-After the install finishes, you should be able to run `npx teachiq-config-install`. This installs all peer dependencies needed to run the linter.
+After install you need a `.eslintrc.js` in your project. 
 
-In case the above does not work, try targeting the install script directly by running `./node_modules/.bin/teachiq-config-install` in your project directory.
+It should look like this:
+```js
+require('@rushstack/eslint-patch/modern-module-resolution')
 
-Then, in your .eslintrc json file, replace your existing config with:
-
-```json
-{
-  "extends": "@teachiq"
+module.exports = {
+  extends: ['@teachiq/eslint-config','...any other extensions the project needs'],
 }
 ```
 
