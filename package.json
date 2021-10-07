@@ -1,6 +1,6 @@
 {
   "name": "@teachiq/eslint-config",
-  "version": "2.0.0-beta.2",
+  "version": "2.0.0-beta.4",
   "publishConfig": {
     "access": "public",
     "registry": " https://npm.pkg.github.com"
@@ -19,11 +19,7 @@
     "version": "echo $npm_package_version",
     "postversion": "npm publish"
   },
-  "peerDependencies": {
-    "@rushstack/eslint-patch": "~1.0.7",
-    "eslint": "~7.8.0"
-  },
-  "devDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^3.10.1",
     "@typescript-eslint/parser": "^3.10.1",
     "@vue/eslint-config-standard": "^5.1.2",
