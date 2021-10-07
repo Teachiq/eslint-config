@@ -13,7 +13,7 @@
   "bugs": {
     "url": "https://github.com/Teachiq/eslint-config/issues"
   },
-  "homepage": "https://github.com/Teachiq/froala-editor#readme",
+  "homepage": "https://github.com/Teachiq/eslint-config#readme",
   "main": "index.js",
   "scripts": {
     "version": "echo $npm_package_version",

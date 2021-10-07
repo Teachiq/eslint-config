@@ -12,8 +12,6 @@ After install you need a `.eslintrc.js` in your project.
 
 It should look like this:
 ```js
-require('@rushstack/eslint-patch/modern-module-resolution')
-
 module.exports = {
   extends: ['@teachiq/eslint-config','...any other extensions the project needs'],
 }
