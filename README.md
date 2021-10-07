@@ -47,4 +47,11 @@ _settings.json_
 }
 ```
 
+### Troubleshoot
+
+This implementation depends on Eslint 7.8.0 beeing used. Sometimes when installing with NPM 7 the peerDependencies is not working as intended. To solve this you can install this package with the flag --legacy-peer-deps.
+
+```
+npm install -D @teachiq/eslint-config --legacy-peer-deps
+```
 
