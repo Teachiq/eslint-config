@@ -1,6 +1,6 @@
 {
   "name": "@teachiq/eslint-config",
-  "version": "2.0.0-beta.4",
+  "version": "2.0.0-beta.5",
   "publishConfig": {
     "access": "public",
     "registry": " https://npm.pkg.github.com"
@@ -40,5 +40,8 @@
     "formatting"
   ],
   "author": "Teachiq",
-  "license": "ISC"
+  "license": "ISC",
+  "eslintConfig": {
+    "extends": "./index.js"
+  }
 }

@@ -7,13 +7,14 @@ This package is intended to configure everything you need for eslint relevant vs
 `npm install -D @teachiq/eslint-config`
 
 ## Using
+Make sure all your local Eslint dependencies are removed.
 
 After install you need a `.eslintrc.js` in your project. 
 
 It should look like this:
 ```js
 module.exports = {
-  extends: ['@teachiq/eslint-config','...any other extensions the project needs'],
+  extends: ['@teachiq'],
 }
 ```
 
