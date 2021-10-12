@@ -24,7 +24,7 @@ module.exports = {
 
 This config works best with the [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension
 
-### Format on save
+## Format on save
 
 In order to get the "format on save" in vscode to work with this config you need to change some user settings.
 
@@ -46,3 +46,10 @@ _settings.json_
 }
 ```
 
+## Troubleshooting
+
+* Sometimes the package-lock file doesn't seem to update properly. Try with a fresh install. Remove package-lock and node folder then run install again.
+
+* Try to install eslint-config with --legacy-peer-deps flag
+
+* Make sure you removed all project Eslint packages before installation
