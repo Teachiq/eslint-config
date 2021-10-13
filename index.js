@@ -16,6 +16,7 @@ module.exports = {
   rules: {
     'file-progress/activate': 1,
     'vue/static-class-names-order': 'warn',
+    'vue/no-unused-properties': 'warn',
     'vue/max-len': [
       'warn',
       {
