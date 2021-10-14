@@ -7,7 +7,7 @@ This package is intended to configure everything you need for eslint relevant vs
 `npm install -D @teachiq/eslint-config`
 
 ## Using
-Make sure all your local Eslint dependencies are removed.
+Make sure all your local Eslint dependencies are removed along with anything related to prettier.
 
 After install you need a `.eslintrc.js` in your project. 
 
@@ -53,3 +53,5 @@ _settings.json_
 * Try to install eslint-config with --legacy-peer-deps flag
 
 * Make sure you removed all project Eslint packages before installation
+  
+* Try rebooting VS Code
