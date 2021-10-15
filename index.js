@@ -22,6 +22,9 @@ module.exports = {
       {
         code: 120,
         ignoreUrls: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+        ignoreRegExpLiterals: true,
         ignorePattern: 'd="([\\s\\S]*?)"', // Ignore SVG path
       },
     ],
