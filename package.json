@@ -1,12 +1,9 @@
 {
   "name": "@teachiq/eslint-config",
-  "version": "1.5.3",
+  "version": "2.0.0",
   "publishConfig": {
     "access": "public",
     "registry": " https://npm.pkg.github.com"
-  },
-  "bin": {
-    "teachiq-config-install": "./install.js"
   },
   "description": "The standard Teachiq linting config",
   "repository": {
@@ -16,53 +13,35 @@
   "bugs": {
     "url": "https://github.com/Teachiq/eslint-config/issues"
   },
-  "homepage": "https://github.com/Teachiq/froala-editor#readme",
+  "homepage": "https://github.com/Teachiq/eslint-config#readme",
   "main": "index.js",
   "scripts": {
     "version": "echo $npm_package_version",
-    "postversion": "npm publish",
-    "postinstall": "echo \"Install complete! Don't forget to run 'teachiq-config-install'\""
+    "postversion": "npm publish"
   },
-  "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.9.0",
-    "@typescript-eslint/parser": "^3.9.0",
-    "@vue/eslint-config-standard": "^5.1.0",
-    "@vue/eslint-config-typescript": "^5.0.2",
-    "eslint": ">= 6",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^6.1.2",
-    "prettier": "^2.1.1",
-    "typescript": "~3.7.5"
-  },
-  "devDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^3.10.1",
     "@typescript-eslint/parser": "^3.10.1",
     "@vue/eslint-config-standard": "^5.1.2",
     "@vue/eslint-config-typescript": "^5.1.0",
-    "eslint": "^7.7.0",
-    "eslint-config-prettier": "^6.11.0",
+    "eslint": "7.8.0",
+    "eslint-plugin-file-progress": "^1.1.1",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "eslint-plugin-vue": "^6.2.2",
-    "prettier": "^2.1.1",
-    "typescript": "^4.0.2"
+    "eslint-plugin-vue": "^7.19.0"
   },
   "keywords": [
     "eslint",
     "config",
     "lint",
-    "prettier",
     "code",
     "formatting"
   ],
   "author": "Teachiq",
-  "license": "ISC"
+  "license": "ISC",
+  "eslintConfig": {
+    "extends": "./index.js"
+  }
 }
