@@ -1,6 +1,7 @@
 ---
 name: Visibility reminder
-about: Remind user that this project is public
+about: This repository is public. Take this into consideration when writing issues
+  and comments.
 title: ''
 labels: ''
 assignees: ''
