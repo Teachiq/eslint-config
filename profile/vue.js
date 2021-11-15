@@ -7,6 +7,7 @@ module.exports = {
     'plugin:vue/recommended'
   ],
   plugins: ['vue'],
+  ignorePatterns: ['**/*.ts', '**/*.tsx'],
   rules: {
     'vue/static-class-names-order': 'warn',
     'vue/no-unused-properties': 'warn',
