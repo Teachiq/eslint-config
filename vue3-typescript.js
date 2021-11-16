@@ -1,5 +1,6 @@
-const deepMergeDeduped = require('./deepMergeDeduped.js')
-const typescriptConfig = require('./typescript')
-const vue3Config = require('./vue3')
+const merge = require('deepmerge')
+const defaultConfig = require('./configs/defaultConfig')
+const typescriptConfig = require('./configs/typescript')
+const vue3Config = require('./configs/vue3')
 
-module.exports = deepMergeDeduped(typescriptConfig, vue3Config)
+module.exports = merge.all([defaultConfig, typescriptConfig, vue3Config])
