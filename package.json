@@ -1,6 +1,6 @@
 {
   "name": "@teachiq/eslint-config",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "publishConfig": {
     "access": "public",
     "registry": " https://npm.pkg.github.com"
@@ -20,17 +20,18 @@
     "postversion": "npm publish"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.10.1",
-    "@typescript-eslint/parser": "^3.10.1",
-    "@vue/eslint-config-standard": "^5.1.2",
-    "@vue/eslint-config-typescript": "^5.1.0",
-    "eslint": "7.8.0",
-    "eslint-plugin-file-progress": "^1.1.1",
-    "eslint-plugin-import": "^2.22.0",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "@vue/eslint-config-standard": "^6.1.0",
+    "@vue/eslint-config-typescript": "^8.0.0",
+    "eslint": "^7.0.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-file-progress": "^1.2.0",
+    "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "eslint-plugin-vue": "^7.19.0"
+    "eslint-plugin-promise": "^5.1.1",
+    "eslint-plugin-standard": "^4.1.0",
+    "eslint-plugin-vue": "^7.0.0"
   },
   "keywords": [
     "eslint",
@@ -42,6 +43,12 @@
   "author": "Teachiq",
   "license": "ISC",
   "eslintConfig": {
-    "extends": "./index.js"
+    "extends": [
+      "./vue.js",
+      "./vue3.js",
+      "./typescript.js",
+      "./vue-typescript.js",
+      "./vue3-typescript.js"
+    ]
   }
 }
