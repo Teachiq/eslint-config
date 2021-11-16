@@ -1,9 +1,11 @@
-module.exports = {
+const deepMergeDeduped = require('./deepMergeDeduped.js');
+const  defaultConfig  = require('./index');
+
+module.exports = deepMergeDeduped(defaultConfig, {
   env: {
     browser: true,
   },
   extends: [
-    '@teachiq',
     "plugin:@typescript-eslint/recommended"
   ],
   parserOptions: {
@@ -26,4 +28,4 @@ module.exports = {
       },
     ],
   },
-}
+})

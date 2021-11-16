@@ -44,10 +44,11 @@
   "license": "ISC",
   "eslintConfig": {
     "extends": [
-      "./profile/vue.js",
-      "./profile/vue3.js",
-      "./profile/vue-typescript.js",
-      "./profile/typescript.js"
+      "./vue.js",
+      "./vue3.js",
+      "./typescript.js",
+      "./vue-typescript.js",
+      "./vue3-typescript.js"
     ]
   }
 }

@@ -1,13 +1,14 @@
-module.exports = {
+const deepMergeDeduped = require('./deepMergeDeduped.js');
+const  defaultConfig  = require('./index');
+
+module.exports = deepMergeDeduped(defaultConfig, {
   env: {
     browser: true,
   },
   extends: [
-    '@teachiq',
-    'plugin:vue/recommended'
+    'plugin:vue/vue3-recommended'
   ],
   plugins: ['vue'],
-  ignorePatterns: ['**/*.ts', '**/*.tsx'],
   rules: {
     'vue/static-class-names-order': 'warn',
     'vue/no-unused-properties': 'warn',
@@ -27,4 +28,4 @@ module.exports = {
     'vue/no-potential-component-option-typo': 'error',
     'vue/html-quotes': ['error', 'double', { avoidEscape: true }],
   },
-}
+})
