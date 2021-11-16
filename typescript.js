@@ -1,17 +1,17 @@
-const deepMergeDeduped = require('./deepMergeDeduped.js');
-const  defaultConfig  = require('./index');
+const deepMergeDeduped = require('./deepMergeDeduped.js')
+const defaultConfig = require('./index')
 
 module.exports = deepMergeDeduped(defaultConfig, {
   env: {
     browser: true,
   },
   extends: [
-    "plugin:@typescript-eslint/recommended"
+    'plugin:@typescript-eslint/recommended',
   ],
   parserOptions: {
-    parser: "@typescript-eslint/parser"
+    parser: '@typescript-eslint/parser',
   },
-  plugins: ["@typescript-eslint"],
+  plugins: ['@typescript-eslint'],
   rules: {
     '@typescript-eslint/no-unused-expressions': 1,
     '@typescript-eslint/no-explicit-any': 0,

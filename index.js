@@ -5,7 +5,7 @@ module.exports = {
     browser: true,
   },
   extends: [
-    'standard'
+    'standard',
   ],
   ignorePatterns: ['**/*.min.js', '**/polyfill.js', '**/*.d.ts', '/**/*.less', '**/*.map'],
   plugins: ['file-progress'],
