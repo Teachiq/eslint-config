@@ -46,7 +46,7 @@
     "extends": [
       "./profile/vue.js",
       "./profile/vue3.js",
-      "./profile/vueTs.js",
+      "./profile/vue-typescript.js",
       "./profile/typescript.js"
     ]
   }
