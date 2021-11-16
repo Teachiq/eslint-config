@@ -14,13 +14,15 @@ After install you need a `.eslintrc.js` in your project.
 It should look like this:
 ```js
 module.exports = {
-  extends: ['@teachiq/eslint-config/profile/{profile-name}'],
+  extends: ['@teachiq/eslint-config/{profile-name}'],
 }
 ```
 Where profile-name should be replaced with one of the profile options 
 * `vue`
 * `vue3`
+* `typescript`
 * `vue-typescript`
+* `vue3-typescript`
 
 If you want the base linting only add `@teachiq` instead, like this
 ```js
