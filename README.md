@@ -51,11 +51,7 @@ _settings.json_
   "eslint.format.enable": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  },
-  "eslint.validate": [
-    "javascript",
-    "vue",
-  ],
+  }
 }
 ```
 
