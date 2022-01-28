@@ -4,6 +4,9 @@ module.exports = {
     'plugin:vue/vue3-recommended',
   ],
   plugins: ['vue'],
+  env: {
+    'vue/setup-compiler-macros': true
+  },
   rules: {
     'vue/static-class-names-order': 'warn',
     'vue/no-unused-properties': 'warn',
