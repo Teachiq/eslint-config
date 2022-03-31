@@ -33,6 +33,17 @@ module.exports = {
 
 **Note:** That should be all you need in your .eslintrc file, unless you explicitly want to override the official config (not recommended)
 
+### Browser support
+To change the default browser support add a `.browserslistrc` to your project. 
+
+**Default**
+```
+last 2 Chrome Major versions
+Firefox >= 52
+Safari >= 11
+Edge >= 18
+```
+
 ## VScode Extensions
 
 This config works best with the [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension
