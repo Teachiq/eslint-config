@@ -6,6 +6,7 @@ module.exports = {
   },
   extends: [
     'standard',
+    'plugin:compat/recommended'
   ],
   ignorePatterns: ['**/*.min.js', '**/polyfill.js', '**/*.d.ts', '/**/*.less', '**/*.map', '**/*.css', '**/*.png'],
   plugins: ['file-progress'],
