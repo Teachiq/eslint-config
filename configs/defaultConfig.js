@@ -1,3 +1,10 @@
+const fs = require('fs');
+const path = require('path');
+
+if (!fs.existsSync(path.join(process.cwd(), '.browserslistrc'))) {
+  process.env.BROWSERSLIST_CONFIG='node_modules/@teachiq/eslint-config/.browserslistrc'
+  console.info('.browserslistrc does not exist in project. Using @teachiq/eslint-config default')
+};
 module.exports = {
   env: {
     es6: true,
