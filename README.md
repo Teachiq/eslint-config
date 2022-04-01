@@ -31,17 +31,17 @@ module.exports = {
 }
 ```
 
-**Note:** That should be all you need in your .eslintrc file, unless you explicitly want to override the official config (not recommended)
+**Note:** That should be all you need in your .eslintrc file, unless you explicitly want to override the official config.
 
 ### Browser support
-To change the default browser support add a `.browserslistrc` to your project. 
+To change the default browser support you need to add your own rule setting in .eslintrc.js
 
 **Default**
 ```
-last 2 Chrome Major versions
-Firefox >= 52
-Safari >= 11
-Edge >= 18
+rules: {
+  ...
+  'compat/compat': ['error', 'last 5 years and Chrome >= 58, Firefox >= 52, Safari >= 11, Edge >= 18'],
+},
 ```
 
 ## VScode Extensions
