@@ -50,9 +50,20 @@ _settings.json_
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "eslint.format.enable": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  }
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "vue"
+  ]
 }
+```
+
+If you have the VSCode StyleLint plugin, make sure `.vue` files are enabled there as well
+
+```json
+"stylelint.validate": [..., "vue"],
 ```
 
 ## Troubleshooting
