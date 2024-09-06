@@ -7,7 +7,18 @@ module.exports = {
   extends: [
     'standard',
   ],
-  ignorePatterns: ['**/*.min.js', '**/polyfill.js', '**/*.d.ts', '/**/*.less', '**/*.map', '**/*.css', '**/*.png'],
+  ignorePatterns: [
+    '**/*.min.js', 
+    '**/polyfill.js', 
+    '**/*.d.ts', 
+    '**/*.css', 
+    '**/*.png',
+    '**/*.min.css',
+    '**/*.less',
+    '**/*.map',
+    '**/*.svg',
+    '**/*.snap',
+  ],
   plugins: ['file-progress'],
   rules: {
     'file-progress/activate': 1,
