@@ -1,6 +1,6 @@
 {
   "name": "@teachiq/eslint-config",
-  "version": "4.0.0-alpha.4",
+  "version": "4.0.0-alpha.5",
   "publishConfig": {
     "access": "public",
     "registry": " https://npm.pkg.github.com"
