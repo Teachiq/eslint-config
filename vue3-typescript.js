@@ -1,6 +1,6 @@
-const merge = require('deepmerge')
-const defaultConfig = require('./configs/defaultConfig')
-const typescriptConfig = require('./configs/typescript')
-const vue3Config = require('./configs/vue3')
+import { merge } from 'deepmerge'
+import defaultConfig from './configs/defaultConfig.js'
+import typescriptConfig from './configs/typescript.js'
+import vue3Config from './configs/vue3.js'
 
-module.exports = merge.all([defaultConfig, typescriptConfig, vue3Config])
+export default merge.all(defaultConfig, typescriptConfig, vue3Config)
