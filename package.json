@@ -48,5 +48,6 @@
       "./vue-typescript.js",
       "./vue3-typescript.js"
     ]
-  }
+  },
+  "type": "module"
 }
