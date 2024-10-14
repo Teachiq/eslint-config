@@ -1,1 +1,3 @@
-module.exports = require('./configs/defaultConfig')
+import defaultConfig from './configs/defaultConfig'
+
+export default defaultConfig
