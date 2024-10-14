@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   extends: [
     '@teachiq',
     'plugin:vue/vue3-recommended',

@@ -1,6 +1,5 @@
-import { merge } from 'deepmerge'
-import defaultConfig from './configs/defaultConfig.js'
-import typescriptConfig from './configs/typescript.js'
+const merge = require('deepmerge')
+const defaultConfig = require('./configs/defaultConfig.js')
+const typescriptConfig = require('./configs/typescript')
 
-
-export default merge(defaultConfig, typescriptConfig)
+module.exports = merge(defaultConfig, typescriptConfig)

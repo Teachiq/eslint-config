@@ -1,11 +1,9 @@
-export default {
+module.exports = {
   extends: [
     'plugin:@typescript-eslint/recommended',
   ],
-  parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 2020,                
-    sourceType: 'module',  
+    parser: '@typescript-eslint/parser',
   },
   plugins: ['@typescript-eslint'],
   rules: {
@@ -25,4 +23,3 @@ export default {
     ],
   },
 }
-

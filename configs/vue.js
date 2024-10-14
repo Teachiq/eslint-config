@@ -1,4 +1,5 @@
-export default {
+
+module.exports = {
   extends: [
     'plugin:vue/recommended',
   ],
@@ -23,5 +24,3 @@ export default {
     'vue/html-quotes': ['error', 'double', { avoidEscape: true }],
   },
 }
-
-
