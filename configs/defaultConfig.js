@@ -4,9 +4,6 @@ module.exports = {
     node: true,
     browser: true,
   },
-  extends: [
-    'standard',
-  ],
   ignorePatterns: [
     '**/*.min.js', 
     '**/polyfill.js', 
