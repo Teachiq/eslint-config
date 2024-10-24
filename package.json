@@ -14,22 +14,35 @@
     "url": "https://github.com/Teachiq/eslint-config/issues"
   },
   "homepage": "https://github.com/Teachiq/eslint-config#readme",
-  "main": "index.js",
   "scripts": {
     "version": "echo $npm_package_version",
     "postversion": "npm publish"
   },
+  "exports": {
+    ".": "./index.mjs",
+    "./vue": "./vue.mjs",
+    "./vue-typescript": "./vue-typescript.mjs",
+    "./vue3": "./vue3.mjs",
+    "./vue3-typescript": "./vue3Typescript.mjs",
+    "./typescript": "./typescript.mjs",
+    "./configs/defaultConfig": "./configs/defaultConfig.mjs",
+    "./configs/typescript": "./configs/typescript.mjs",
+    "./configs/vue": "./configs/vue.mjs",
+    "./configs/vue3": "./configs/vue3.mjs"
+    
+  },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.8.1",
-    "@typescript-eslint/parser": "^8.8.1",
+    "@types/eslint__js": "^8.42.3",
+    "@typescript-eslint/parser": "^8.11.0",
     "@vue/eslint-config-typescript": "^14.0.1",
-    "deepmerge": "^4.3.0",
-    "eslint": "^9.12.0",
+    "eslint": "^9.13.0",
     "eslint-plugin-file-progress": "^1.3.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^7.1.0",
-    "eslint-plugin-vue": "^9.9.0"
+    "eslint-plugin-vue": "^9.9.0",
+    "globals": "^15.11.0",
+    "typescript-eslint": "^8.11.0"
   },
   "keywords": [
     "eslint",
@@ -40,18 +53,5 @@
   ],
   "author": "Teachiq",
   "license": "ISC",
-  "eslintConfig": {
-    "extends": [
-      "./vue.js",
-      "./vue3.js",
-      "./typescript.js",
-      "./vue-typescript.js",
-      "./vue3-typescript.js"
-    ]
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3.1.0",
-    "@eslint/js": "^9.12.0",
-    "globals": "^15.11.0"
-  }
+  "type": "module"
 }
