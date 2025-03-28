@@ -19,7 +19,6 @@ export default [
       vue: vuePlugin,
     },
     rules: {
-      'vue/no-setup-props-reactivity-loss': 'warn',
       'vue/static-class-names-order': 'warn',
       'vue/require-default-prop': 'error',
       'vue/no-unused-properties': 'warn',
