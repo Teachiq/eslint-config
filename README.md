@@ -7,31 +7,28 @@ This package is intended to configure everything you need for eslint relevant vs
 `npm install -D @teachiq/eslint-config`
 
 ## Using
+
 Make sure all your local Eslint dependencies are removed along with anything related to prettier.
 
-After install you need a `.eslintrc.js` in your project. 
+For ESLint v9+ with flat config:
 
-It should look like this:
 ```js
-module.exports = {
-  extends: ['@teachiq/eslint-config/{profile-name}'],
-}
-```
-Where profile-name should be replaced with one of the profile options 
-* `vue`
-* `vue3`
-* `typescript`
-* `vue-typescript`
-* `vue3-typescript`
+// eslint.config.js
+import { defineConfig } from 'eslint/config'
+import vue3ts from '@teachiq/eslint-config/vue3-typescript'
 
-If you want the base linting only add `@teachiq` instead, like this
-```js
-module.exports = {
-  extends: ['@teachiq'],
-}
-```
+export default defineConfig([
+  ...vue3ts,
+  {
+    files: ['**/*.js'],
 
-**Note:** That should be all you need in your .eslintrc file, unless you explicitly want to override the official config (not recommended)
+    // anything from here will override vue3ts
+    rules: {
+      'vue/no-setup-props-reactivity-loss': 'off',
+    },
+  },
+])
+```
 
 ## VScode Extensions
 
@@ -53,10 +50,7 @@ _settings.json_
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true
   },
-  "eslint.validate": [
-    "javascript",
-    "vue"
-  ]
+  "eslint.validate": ["javascript", "vue"]
 }
 ```
 
@@ -68,10 +62,10 @@ If you have the VSCode StyleLint plugin, make sure `.vue` files are enabled ther
 
 ## Troubleshooting
 
-* Sometimes the package-lock file doesn't seem to update properly. Try with a fresh install. Remove package-lock and node folder then run install again.
+- Sometimes the package-lock file doesn't seem to update properly. Try with a fresh install. Remove package-lock and node folder then run install again.
 
-* Try to install eslint-config with --legacy-peer-deps flag
+- Try to install eslint-config with --legacy-peer-deps flag
 
-* Make sure you removed all project Eslint packages before installation
+- Make sure you removed all project Eslint packages before installation
 
-* Try rebooting VS Code
+- Try rebooting VS Code
