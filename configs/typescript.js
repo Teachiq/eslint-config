@@ -3,7 +3,7 @@ import typescriptPlugin from '@typescript-eslint/eslint-plugin'
 
 export default [
   {
-    files: ['**/*.ts', '**/*.tsx'],
+    files: ['**/*.ts', '**/*.tsx', '**/*.vue'],
     languageOptions: {
       parser: typescriptParser,
       parserOptions: {
@@ -21,12 +21,15 @@ export default [
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       '@typescript-eslint/no-use-before-define': 'off',
       '@typescript-eslint/no-extra-semi': 'off',
+      // Replace no-unused-vars with @typescript-eslint/no-unused-vars
+      'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': [
         'warn',
         {
           vars: 'all',
           args: 'after-used',
-          ignoreRestSiblings: false,
+          caughtErrors: 'none',
+          ignoreRestSiblings: true,
           argsIgnorePattern: '^_',
         },
       ],
