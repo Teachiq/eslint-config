@@ -24,7 +24,7 @@ export default [
     },
     rules: {
       'file-progress/activate': 'warn',
-      'space-before-function-paren': [
+      '@stylistic/space-before-function-paren': [
         'error',
         {
           anonymous: 'always',
@@ -35,11 +35,11 @@ export default [
       'array-callback-return': 'off',
       'no-misleading-character-class': 'off',
       'no-control-regex': 'off',
-      'object-curly-spacing': ['error', 'always'],
-      'comma-dangle': ['error', 'always-multiline'],
-      'max-len': 'off',
+      '@stylistic/object-curly-spacing': ['error', 'always'],
+      '@stylistic/comma-dangle': ['error', 'always-multiline'],
+      '@stylistic/max-len': 'off',
       'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-      'generator-star-spacing': 'off',
+      '@stylistic/generator-star-spacing': 'off',
       'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     },
   },
