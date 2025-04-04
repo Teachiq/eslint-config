@@ -1,5 +1,4 @@
-const merge = require('deepmerge')
-const defaultConfig = require('./configs/defaultConfig')
-const vueConfig = require('./configs/vue')
+import defaultConfig from './configs/defaultConfig.js'
+import vue from './configs/vue.js'
 
-module.exports = merge(defaultConfig, vueConfig)
+export default [...defaultConfig, ...vue]
