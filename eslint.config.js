@@ -1,5 +1,5 @@
 import defaultConfig from './configs/defaultConfig.js'
-import vue3ts from './configs/vue3-typescript.js'
+import vue3ts from './vue3-typescript.js'
 import { defineConfig } from 'eslint/config'
 
 // eslint.config.js

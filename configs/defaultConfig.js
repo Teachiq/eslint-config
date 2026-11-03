@@ -1,10 +1,15 @@
 import js from '@eslint/js'
-import fileProgress from 'eslint-plugin-file-progress'
 
 import neostandard from 'neostandard'
 
 export default [
-  neostandard(),
+  // Since 0.14, neostandard applies its rules and plugins only to the file
+  // types it knows (.js, .cjs, .mjs, .jsx). Adding ours keeps them on every
+  // file type 4.x covered; without its plugins, the rule settings below would
+  // be a config error on those files.
+  neostandard({
+    files: ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts', '**/*.vue'],
+  }),
   js.configs.recommended,
   {
     languageOptions: {
@@ -19,11 +24,16 @@ export default [
         process: 'readonly',
       },
     },
-    plugins: {
-      'file-progress': fileProgress,
-    },
     rules: {
-      'file-progress/activate': 'warn',
+      // New in @eslint/js 10's recommended set. At warn, so upgrading reddens
+      // no consumer; each repository promotes them to error once it is clean.
+      'no-unassigned-vars': 'warn',
+      'no-useless-assignment': 'warn',
+      'preserve-caught-error': 'warn',
+      // eslint-plugin-n 18 also reports callback({ … }) and callback([ … ]),
+      // which in frontend code are mostly browser callbacks, not Node.js
+      // error-first ones. At warn for the same reason.
+      'n/no-callback-literal': 'warn',
       '@stylistic/space-before-function-paren': [
         'error',
         {

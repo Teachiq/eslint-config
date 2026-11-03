@@ -1,6 +1,6 @@
 {
   "name": "@teachiq/eslint-config",
-  "version": "4.1.0",
+  "version": "5.0.0",
   "type": "module",
   "main": "configs/defaultConfig.js",
   "exports": {
@@ -12,7 +12,7 @@
     "./vue3-typescript": "./vue3-typescript.js"
   },
   "peerDependencies": {
-    "eslint": "^9.0.0"
+    "eslint": "^10.0.0"
   },
   "publishConfig": {
     "access": "public",
@@ -32,14 +32,16 @@
     "postversion": "npm publish"
   },
   "dependencies": {
-    "@eslint/js": "^9.0.0",
-    "@typescript-eslint/eslint-plugin": "^8.28.0",
-    "@typescript-eslint/parser": "^8.28.0",
-    "eslint-plugin-file-progress": "^3.0.2",
-    "eslint-plugin-vue": "^10.0.0",
+    "@eslint/js": "^10.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.56.0",
+    "@typescript-eslint/parser": "^8.56.0",
+    "eslint-plugin-vue": "^10.8.0",
     "eslint-plugin-vuejs-accessibility": "^2.6.2",
-    "neostandard": "^0.12.1",
-    "vue-eslint-parser": "^10.1.1"
+    "neostandard": "^0.14.1",
+    "vue-eslint-parser": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^10.14.0"
   },
   "keywords": [
     "eslint",

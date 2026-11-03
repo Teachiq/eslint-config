@@ -10,7 +10,7 @@ import vueAccessibility from 'eslint-plugin-vuejs-accessibility'
 const accessibilityRules = Object.fromEntries(
   vueAccessibility.configs['flat/recommended']
     .flatMap((config) => Object.keys(config.rules ?? {}))
-    .map((rule) => [rule, 'warn'])
+    .map((rule) => [rule, 'warn']),
 )
 
 export default [
