@@ -3,7 +3,7 @@ import typescriptPlugin from '@typescript-eslint/eslint-plugin'
 
 export default [
   {
-    files: ['**/*.ts', '**/*.tsx', '**/*.vue'],
+    files: ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts', '**/*.vue'],
     languageOptions: {
       parser: typescriptParser,
       parserOptions: {

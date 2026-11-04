@@ -30,6 +30,37 @@ export default defineConfig([
 ])
 ```
 
+## Upgrading from 4.x to 5.0
+
+5.0 is for ESLint 10. Stay on 4.x until your other ESLint plugins support ESLint 10 too.
+
+1. Requirements: `eslint` 10 and Node.js `^22.13.0 || >=24`.
+2. Install in two steps. Swapping 4.x for 5.0 in one `npm install` fails with a misleading `ERESOLVE`, because the
+   lockfile still holds 4.x's dependencies, which require ESLint 9:
+
+   ```sh
+   npm uninstall @teachiq/eslint-config
+   npm install -D eslint@^10 @teachiq/eslint-config@^5
+   ```
+
+3. Your `eslint.config.js` stays the same: `...vue3ts` and the other entry points work as before.
+
+What changes:
+
+- **Import rules are gone.** neostandard 0.13 removed `eslint-plugin-import-x`, so `import-x/export`, `import-x/first`,
+  `import-x/no-absolute-path`, `import-x/no-duplicates`, `import-x/no-named-default` and
+  `import-x/no-webpack-loader-syntax` no longer run. If you want them, add `eslint-plugin-import-x` in your own config.
+  `eslint-plugin-import` has no ESLint 10 version; `eslint-plugin-import-x` is the replacement.
+- **New warnings** from `@eslint/js` 10's recommended set: `no-unassigned-vars`, `no-useless-assignment` and
+  `preserve-caught-error`. They are `warn`, so they don't fail a lint without `--max-warnings`; set them to `error`
+  in your config once your code is clean.
+- **`n/no-callback-literal` is now `warn`.** eslint-plugin-n 18 also reports `callback({ … })` and `callback([ … ])`,
+  which in frontend code are mostly browser callbacks (`ResizeObserver`, listener mocks), not Node.js error-first ones.
+- The default entry point (`@teachiq/eslint-config`) now also lints `.ts`, `.mts`, `.cts` and `.vue` files, which
+  4.x skipped. It has no TypeScript or Vue parser, so for those files use `vue3-typescript` (or add `typescript` /
+  `vue3`).
+- The React rules from neostandard are gone (they don't apply to Vue), and so is the "Processing:" progress output.
+
 ## VScode Extensions
 
 This config works best with the [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension
